@@ -4,7 +4,7 @@ const hoursEl = document.getElementById('hours');
 const minsEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
 
-const newYear = '1 Jan 2023';
+const newYear = '16 May 2023';
 
 function countDown() {
     const newYearDate = new Date(newYear);
@@ -27,7 +27,6 @@ function formatTime(time){
     return time < 10 ? '0'+time : time;
 }
 
-//console.log(secondsEl)
 // initial call
 countDown();
 setInterval(countDown, 1000);
